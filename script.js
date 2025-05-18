@@ -145,6 +145,6 @@ form.addEventListener('submit', (e) => {
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   // Replace this URL with your actual Google Form URL:
-  const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdUB6ZMoYo27-93MKJAxHf920GB9f0O_A96Kez-E6O1TzI3rw/viewform?usp=header';
+  const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdUB6ZMoYo27-93MKJAxHf920GB9f0O_A96Kez-E6O1TzI3rw/viewform?usp=https://docs.google.com/forms/d/e/1FAIpQLSf-JtviCeNtljp3VFL-QM0gpmvgEN4Xpbbf8jmZD9Ge9u3HKg/viewform?usp=header';
   window.open(googleFormURL, '_blank');
 });
