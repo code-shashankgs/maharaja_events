@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maharaja Events & Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Maharaja Events</div>
+    <nav>
+      <ul>
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Maharaja Events & Services</h1>
+      <p>Creating unforgettable moments with royal elegance.</p>
+      <a href="#contact" class="btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <h2>Gallery</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide active" style="background-image: url('images/1.jpg')"></div>
+        <div class="carousel-slide" style="background-image: url('images/2.jpg')"></div>
+        <div class="carousel-slide" style="background-image: url('images/3.jpg')"></div>
+        <div class="carousel-slide" style="background-image: url('images/4.jpg')"></div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Previous Slide">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Next Slide">&#10095;</button>
+      <div class="carousel-dots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+        <button class="dot" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <h2>About Us</h2>
+    <p>
+      Maharaja Events & Services is your one-stop destination for luxurious, memorable, and smoothly organized events. Whether it's a wedding, corporate gathering, or a private party, we bring your dreams to life with a touch of royal charm.
+    </p>
+  </section>
+
+  <section id="services" class="section services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Weddings</h3>
+        <p>Grand wedding planning with decor, catering, and coordination.</p>
+      </div>
+      <div class="service-card">
+        <h3>Corporate Events</h3>
+        <p>Professional event setup for meetings, launches, and retreats.</p>
+      </div>
+      <div class="service-card">
+        <h3>Parties & More</h3>
+        <p>Birthdays, anniversaries, and theme parties done with flair.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <span class="error-msg" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <span class="error-msg" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <div id="formMessage" role="alert"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maharaja Events & Services. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
