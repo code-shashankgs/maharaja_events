@@ -7,6 +7,8 @@ menuToggle.addEventListener('click', () => {
   navUl.classList.toggle('show');
 });
 
+
+//test
 // Smooth scroll highlight active link
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
